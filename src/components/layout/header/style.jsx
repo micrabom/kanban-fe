@@ -14,7 +14,7 @@ const Trend = styled(Paper)(({ theme }) => ({
 const HeaderWrapper = styled('div')(({ theme }) => ({
     /* padding:'10px', */
     width: '100%',
-    // outline: '1px solid blue',
+    // outline: '1px solid blue', 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
