@@ -5,18 +5,18 @@ import { Button, Grid, Typography } from '@mui/material'
 export const Navbar = () => {
     return (
         <NavbarWrapper>
-            <Grid container>
+            <Grid container spacing={1}>
                 <Grid item xs={2}>
                     <Typography variant={'h4'} noWrap>Rambs Dev</Typography>
                 </Grid>
                 <Grid item xs={8} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-                    <Typography variant='h5' sx={{ margin: '0 .7rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>Home</Typography>
-                    <Typography variant='h5' sx={{ margin: '0 .7rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>About</Typography>
-                    <Typography variant='h5' sx={{ margin: '0 .7rem', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>Potfolio</Typography>
+                    <Button variant='text' sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>Home</Button>
+                    <Button variant='text' sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>About</Button>
+                    <Button variant='text' sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>Potfolio</Button>
                 </Grid>
                 <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <ContactWrapper>
-                        <Button variant='outlined'><Typography variant='h6'>Contact</Typography></Button>
+                        <Button variant='outlined'>Contact</Button>
                     </ContactWrapper>
                 </Grid>
             </Grid>

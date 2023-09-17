@@ -11,16 +11,13 @@ const Trend = styled(Paper)(({ theme }) => ({
     boxShadow: 'none',
 }));
 
-const HeaderWrapper = styled('div')(({ theme }) => ({
-    /* padding:'10px', */
+const FooterWrapper = styled('div')(({ theme }) => ({
+    outline: '1px solid red',
     width: '100%',
-    // outline: '1px solid blue', 
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    height:'10vh',
     ...theme.mixins.toolbar,
 }));
 
 export {
-    HeaderWrapper,
+    FooterWrapper,
 }

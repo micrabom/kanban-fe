@@ -1,5 +1,9 @@
 import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+import { Paper, Button } from '@mui/material';
+
+
+// Create a custom theme
+
 
 const PaperWrapper = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -12,7 +16,7 @@ const PaperWrapper = styled(Paper)(({ theme }) => ({
 }));
 
 const NavbarWrapper = styled('div')(({ theme }) => ({
-    margin: '0 10px',
+    margin: '0 15px',
     width: '100%',
     /* outline: '1px solid red', */
     display: 'flex',
@@ -23,13 +27,22 @@ const NavbarWrapper = styled('div')(({ theme }) => ({
 
 const ContactWrapper = styled('div')(({ theme }) => ({
     display: 'flex',
-    flexDirection:'column',
+    flexDirection: 'column',
     justifyContent: 'flex-end',
     ...theme.mixins.toolbar,
+}));
+const StyledButton = styled(Button)(({ theme }) => ({
+    // Add your button styles here
+    backgroundColor: theme.palette.primary.main,
+    color: 'white',
+    '&:hover': {
+        backgroundColor: theme.palette.primary.dark,
+    },
 }));
 
 export {
     NavbarWrapper,
     PaperWrapper,
     ContactWrapper,
+    StyledButton,
 }

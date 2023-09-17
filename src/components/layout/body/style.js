@@ -11,13 +11,13 @@ const Trend = styled(Paper)(({ theme }) => ({
     boxShadow: 'none',
 }));
 
-const HomePageWrapper = styled('div')(({ theme }) => ({
+const BodyWrapper = styled('div')(({ theme }) => ({
     /* outline: '1px solid red', */
-    width: '100vw',
-    height:'100vh',
+    width: '100%',
+    height: '100vh',
     ...theme.mixins.toolbar,
 }));
 
 export {
-    HomePageWrapper,
+    BodyWrapper,
 }

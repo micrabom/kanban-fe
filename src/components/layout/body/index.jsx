@@ -1,9 +1,15 @@
 import React from 'react'
+import { BodyWrapper } from './style'
+import { Typography } from '@mui/material'
 
-const Body = () => {
-  return (
-    <div>Body</div>
-  )
+export const Body = () => {
+	return (
+		<BodyWrapper>
+			<Typography>The qcuik brown fox jumps over the lazy dog</Typography>
+			<Typography>The qcuik brown fox jumps over the lazy dog</Typography>
+			<Typography>The qcuik brown fox jumps over the lazy dog</Typography>
+			<Typography>The qcuik brown fox jumps over the lazy dog</Typography>
+			<Typography>The qcuik brown fox jumps over the lazy dog</Typography>
+		</BodyWrapper>
+	)
 }
-
-export default Body
